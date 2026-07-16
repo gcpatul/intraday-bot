@@ -1,0 +1,166 @@
+{
+  "config": {
+    "timeframe": "daily",
+    "cost_bps_per_side": 5.0,
+    "trail_pct": 0.03,
+    "mr_time_stop_days": 10,
+    "start_equity": 12500.0,
+    "max_positions": 8,
+    "window": "2016-07-11..2026-07-10",
+    "sessions": 2514,
+    "survivorship_bias": "today's S&P list applied backwards \u2014 optimistic"
+  },
+  "benchmark_spy": {
+    "window_return_pct": 315.32,
+    "cagr_pct": 15.34,
+    "sharpe_daily_ann": 0.89,
+    "max_drawdown_pct": -33.72,
+    "trades": 0,
+    "win_rate_pct": 0.0,
+    "profit_factor": null,
+    "avg_trade_pct": 0.0,
+    "avg_bars_held": 0.0,
+    "same_day_round_trips": 0,
+    "worst_5day_daytrade_count": 0,
+    "final_equity": 51914.6,
+    "yearly": {
+      "2016": 5.9,
+      "2017": 21.7,
+      "2018": -4.6,
+      "2019": 31.2,
+      "2020": 18.3,
+      "2021": 28.7,
+      "2022": -18.2,
+      "2023": 26.2,
+      "2024": 24.9,
+      "2025": 17.7,
+      "2026": 11.3
+    }
+  },
+  "runs": {
+    "momentum": {
+      "window_return_pct": 42.2,
+      "cagr_pct": 3.59,
+      "sharpe_daily_ann": 0.39,
+      "max_drawdown_pct": -20.34,
+      "trades": 2336,
+      "win_rate_pct": 37.9,
+      "profit_factor": 1.08,
+      "avg_trade_pct": 0.139,
+      "same_day_round_trips": 211,
+      "worst_5day_daytrade_count": 15,
+      "final_equity": 17774.89,
+      "avg_hold_days": 7.1,
+      "split": {
+        "h1_return_pct": 39.77,
+        "h2_return_pct": 1.99,
+        "h1_profit_factor": 1.19,
+        "h2_profit_factor": 1.03,
+        "h1_trades": 1035,
+        "h2_trades": 1301
+      },
+      "yearly": {
+        "2016": 0.0,
+        "2017": 2.6,
+        "2018": -0.2,
+        "2019": 8.8,
+        "2020": 19.9,
+        "2021": 12.4,
+        "2022": -1.2,
+        "2023": 6.8,
+        "2024": 6.2,
+        "2025": -12.5,
+        "2026": -3.3
+      },
+      "exit_reasons": {
+        "trail_stop": "2303",
+        "cross_down": "27",
+        "end_of_test": "6"
+      }
+    },
+    "meanrev": {
+      "window_return_pct": 56.6,
+      "cagr_pct": 4.6,
+      "sharpe_daily_ann": 0.44,
+      "max_drawdown_pct": -33.06,
+      "trades": 5933,
+      "win_rate_pct": 48.6,
+      "profit_factor": 1.05,
+      "avg_trade_pct": 0.071,
+      "same_day_round_trips": 1201,
+      "worst_5day_daytrade_count": 17,
+      "final_equity": 19575.12,
+      "avg_hold_days": 2.8,
+      "split": {
+        "h1_return_pct": 56.21,
+        "h2_return_pct": 0.49,
+        "h1_profit_factor": 1.13,
+        "h2_profit_factor": 1.0,
+        "h1_trades": 2808,
+        "h2_trades": 3125
+      },
+      "yearly": {
+        "2016": 0.0,
+        "2017": 13.3,
+        "2018": -6.5,
+        "2019": 13.8,
+        "2020": 23.3,
+        "2021": 9.3,
+        "2022": -12.3,
+        "2023": 15.7,
+        "2024": 26.4,
+        "2025": -6.9,
+        "2026": -19.2
+      },
+      "exit_reasons": {
+        "rsi_exit": "3130",
+        "hard_stop": "2787",
+        "time_stop": "8",
+        "end_of_test": "8"
+      }
+    },
+    "combined": {
+      "window_return_pct": 73.38,
+      "cagr_pct": 5.67,
+      "sharpe_daily_ann": 0.54,
+      "max_drawdown_pct": -22.1,
+      "trades": 3218,
+      "win_rate_pct": 41.0,
+      "profit_factor": 1.1,
+      "avg_trade_pct": 0.155,
+      "same_day_round_trips": 421,
+      "worst_5day_daytrade_count": 23,
+      "final_equity": 21672.67,
+      "avg_hold_days": 5.8,
+      "split": {
+        "h1_return_pct": 44.91,
+        "h2_return_pct": 19.52,
+        "h1_profit_factor": 1.16,
+        "h2_profit_factor": 1.07,
+        "h1_trades": 1474,
+        "h2_trades": 1744
+      },
+      "yearly": {
+        "2016": 0.0,
+        "2017": 2.5,
+        "2018": -1.2,
+        "2019": 7.6,
+        "2020": 21.1,
+        "2021": 24.7,
+        "2022": -4.3,
+        "2023": 13.7,
+        "2024": 9.1,
+        "2025": -11.8,
+        "2026": 0.6
+      },
+      "exit_reasons": {
+        "trail_stop": "2203",
+        "rsi_exit": "496",
+        "hard_stop": "488",
+        "cross_down": "24",
+        "end_of_test": "6",
+        "time_stop": "1"
+      }
+    }
+  }
+}

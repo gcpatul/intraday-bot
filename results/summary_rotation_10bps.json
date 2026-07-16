@@ -1,0 +1,139 @@
+{
+  "config": {
+    "timeframe": "daily-monthly-rotation",
+    "cost_bps_per_side": 10.0,
+    "window": "2017-08-01..2026-07-10",
+    "sessions": 2247,
+    "survivorship_bias": "today's S&P list backwards \u2014 inflates XS momentum badly"
+  },
+  "benchmark_spy": {
+    "window_return_pct": 251.22,
+    "cagr_pct": 15.13,
+    "sharpe_daily_ann": 0.85,
+    "max_drawdown_pct": -33.72,
+    "trades": 0,
+    "win_rate_pct": 0.0,
+    "profit_factor": null,
+    "avg_trade_pct": 0.0,
+    "avg_bars_held": 0.0,
+    "same_day_round_trips": 0,
+    "worst_5day_daytrade_count": 0,
+    "final_equity": 43902.18,
+    "yearly": {
+      "2017": 9.0,
+      "2018": -4.6,
+      "2019": 31.2,
+      "2020": 18.3,
+      "2021": 28.7,
+      "2022": -18.2,
+      "2023": 26.2,
+      "2024": 24.9,
+      "2025": 17.7,
+      "2026": 11.3
+    }
+  },
+  "runs": {
+    "dual_momentum": {
+      "window_return_pct": 171.2,
+      "cagr_pct": 11.84,
+      "sharpe_daily_ann": 0.75,
+      "max_drawdown_pct": -33.72,
+      "trades": 0,
+      "win_rate_pct": 0.0,
+      "profit_factor": null,
+      "avg_trade_pct": 0.0,
+      "avg_bars_held": 0.0,
+      "same_day_round_trips": 0,
+      "worst_5day_daytrade_count": 0,
+      "final_equity": 33900.56,
+      "h1_return_pct": 61.16,
+      "h2_return_pct": 68.22,
+      "yearly": {
+        "2017": 9.0,
+        "2018": -4.6,
+        "2019": 17.4,
+        "2020": 4.8,
+        "2021": 28.7,
+        "2022": -12.9,
+        "2023": 15.5,
+        "2024": 24.9,
+        "2025": 17.7,
+        "2026": 11.3
+      },
+      "switches": 7,
+      "criteria": {
+        "D1_cagr_within_2pp_of_spy": false,
+        "D2_maxdd_leq_60pct_of_spy": false,
+        "D3_both_halves_positive": true
+      }
+    },
+    "xs_momentum": {
+      "window_return_pct": 2252.88,
+      "cagr_pct": 42.5,
+      "sharpe_daily_ann": 1.25,
+      "max_drawdown_pct": -43.89,
+      "trades": 0,
+      "win_rate_pct": 0.0,
+      "profit_factor": null,
+      "avg_trade_pct": 0.0,
+      "avg_bars_held": 0.0,
+      "same_day_round_trips": 0,
+      "worst_5day_daytrade_count": 0,
+      "final_equity": 294109.92,
+      "h1_return_pct": 232.29,
+      "h2_return_pct": 607.34,
+      "yearly": {
+        "2017": 15.5,
+        "2018": 4.7,
+        "2019": 52.5,
+        "2020": 48.5,
+        "2021": 22.8,
+        "2022": 9.3,
+        "2023": 45.2,
+        "2024": 81.8,
+        "2025": 45.2,
+        "2026": 67.1
+      },
+      "rebalances": 108,
+      "criteria": {
+        "X1_beats_spy_total_return": true,
+        "X2_maxdd_leq_spy": false,
+        "X3_both_halves_positive": true
+      }
+    },
+    "xs_momentum_regime": {
+      "window_return_pct": 665.92,
+      "cagr_pct": 25.65,
+      "sharpe_daily_ann": 0.99,
+      "max_drawdown_pct": -32.9,
+      "trades": 0,
+      "win_rate_pct": 0.0,
+      "profit_factor": null,
+      "avg_trade_pct": 0.0,
+      "avg_bars_held": 0.0,
+      "same_day_round_trips": 0,
+      "worst_5day_daytrade_count": 0,
+      "final_equity": 95739.52,
+      "h1_return_pct": 142.92,
+      "h2_return_pct": 214.97,
+      "yearly": {
+        "2017": 15.5,
+        "2018": 6.5,
+        "2019": 12.6,
+        "2020": 44.6,
+        "2021": 22.8,
+        "2022": -14.1,
+        "2023": 20.2,
+        "2024": 81.8,
+        "2025": 26.0,
+        "2026": 31.7
+      },
+      "rebalances": 98,
+      "criteria": {
+        "X1_beats_spy_total_return": true,
+        "X2_maxdd_leq_spy": true,
+        "X3_both_halves_positive": true
+      }
+    }
+  }
+}

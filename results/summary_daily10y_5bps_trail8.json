@@ -1,0 +1,127 @@
+{
+  "config": {
+    "timeframe": "daily",
+    "cost_bps_per_side": 5.0,
+    "trail_pct": 0.08,
+    "mr_time_stop_days": 10,
+    "mr_hard_stop": 0.05,
+    "start_equity": 12500.0,
+    "max_positions": 8,
+    "window": "2016-07-11..2026-07-10",
+    "sessions": 2514,
+    "survivorship_bias": "today's S&P list applied backwards \u2014 optimistic"
+  },
+  "benchmark_spy": {
+    "window_return_pct": 315.32,
+    "cagr_pct": 15.34,
+    "sharpe_daily_ann": 0.89,
+    "max_drawdown_pct": -33.72,
+    "trades": 0,
+    "win_rate_pct": 0.0,
+    "profit_factor": null,
+    "avg_trade_pct": 0.0,
+    "avg_bars_held": 0.0,
+    "same_day_round_trips": 0,
+    "worst_5day_daytrade_count": 0,
+    "final_equity": 51914.6,
+    "yearly": {
+      "2016": 5.9,
+      "2017": 21.7,
+      "2018": -4.6,
+      "2019": 31.2,
+      "2020": 18.3,
+      "2021": 28.7,
+      "2022": -18.2,
+      "2023": 26.2,
+      "2024": 24.9,
+      "2025": 17.7,
+      "2026": 11.3
+    }
+  },
+  "runs": {
+    "meanrev": {
+      "window_return_pct": 96.32,
+      "cagr_pct": 7.0,
+      "sharpe_daily_ann": 0.56,
+      "max_drawdown_pct": -30.83,
+      "trades": 4147,
+      "win_rate_pct": 62.6,
+      "profit_factor": 1.09,
+      "avg_trade_pct": 0.149,
+      "same_day_round_trips": 99,
+      "worst_5day_daytrade_count": 5,
+      "final_equity": 24539.86,
+      "avg_hold_days": 4.8,
+      "split": {
+        "h1_return_pct": 70.55,
+        "h2_return_pct": 15.58,
+        "h1_profit_factor": 1.2,
+        "h2_profit_factor": 1.04,
+        "h1_trades": 2003,
+        "h2_trades": 2144
+      },
+      "yearly": {
+        "2016": 0.0,
+        "2017": 13.8,
+        "2018": -0.8,
+        "2019": 14.0,
+        "2020": 31.1,
+        "2021": 9.2,
+        "2022": -21.3,
+        "2023": 25.9,
+        "2024": 31.7,
+        "2025": -3.8,
+        "2026": -15.1
+      },
+      "exit_reasons": {
+        "rsi_exit": "3319",
+        "hard_stop": "773",
+        "time_stop": "47",
+        "end_of_test": "8"
+      }
+    },
+    "combined": {
+      "window_return_pct": 83.38,
+      "cagr_pct": 6.27,
+      "sharpe_daily_ann": 0.54,
+      "max_drawdown_pct": -23.23,
+      "trades": 774,
+      "win_rate_pct": 46.0,
+      "profit_factor": 1.24,
+      "avg_trade_pct": 0.776,
+      "same_day_round_trips": 11,
+      "worst_5day_daytrade_count": 2,
+      "final_equity": 22922.47,
+      "avg_hold_days": 29.2,
+      "split": {
+        "h1_return_pct": 57.16,
+        "h2_return_pct": 16.98,
+        "h1_profit_factor": 1.46,
+        "h2_profit_factor": 1.16,
+        "h1_trades": 328,
+        "h2_trades": 446
+      },
+      "yearly": {
+        "2016": 0.0,
+        "2017": 7.1,
+        "2018": -7.7,
+        "2019": 13.3,
+        "2020": 19.6,
+        "2021": 38.0,
+        "2022": -11.1,
+        "2023": 8.8,
+        "2024": 7.5,
+        "2025": -5.7,
+        "2026": 1.1
+      },
+      "exit_reasons": {
+        "trail_stop": "497",
+        "rsi_exit": "162",
+        "cross_down": "59",
+        "hard_stop": "47",
+        "end_of_test": "8",
+        "time_stop": "1"
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "config": {
+    "timeframe": "daily",
+    "cost_bps_per_side": 10.0,
+    "trail_pct": 0.08,
+    "mr_time_stop_days": 10,
+    "mr_hard_stop": 0.05,
+    "start_equity": 12500.0,
+    "max_positions": 8,
+    "window": "2016-07-11..2026-07-10",
+    "sessions": 2514,
+    "survivorship_bias": "today's S&P list applied backwards \u2014 optimistic"
+  },
+  "benchmark_spy": {
+    "window_return_pct": 315.32,
+    "cagr_pct": 15.34,
+    "sharpe_daily_ann": 0.89,
+    "max_drawdown_pct": -33.72,
+    "trades": 0,
+    "win_rate_pct": 0.0,
+    "profit_factor": null,
+    "avg_trade_pct": 0.0,
+    "avg_bars_held": 0.0,
+    "same_day_round_trips": 0,
+    "worst_5day_daytrade_count": 0,
+    "final_equity": 51914.6,
+    "yearly": {
+      "2016": 5.9,
+      "2017": 21.7,
+      "2018": -4.6,
+      "2019": 31.2,
+      "2020": 18.3,
+      "2021": 28.7,
+      "2022": -18.2,
+      "2023": 26.2,
+      "2024": 24.9,
+      "2025": 17.7,
+      "2026": 11.3
+    }
+  },
+  "runs": {
+    "momentum": {
+      "window_return_pct": 64.57,
+      "cagr_pct": 5.12,
+      "sharpe_daily_ann": 0.46,
+      "max_drawdown_pct": -21.96,
+      "trades": 558,
+      "win_rate_pct": 39.6,
+      "profit_factor": 1.27,
+      "avg_trade_pct": 0.887,
+      "same_day_round_trips": 3,
+      "worst_5day_daytrade_count": 1,
+      "final_equity": 20571.06,
+      "avg_hold_days": 39.5,
+      "split": {
+        "h1_return_pct": 30.13,
+        "h2_return_pct": 26.67,
+        "h1_profit_factor": 1.25,
+        "h2_profit_factor": 1.28,
+        "h1_trades": 230,
+        "h2_trades": 328
+      },
+      "yearly": {
+        "2016": 0.0,
+        "2017": 5.6,
+        "2018": -9.8,
+        "2019": 4.9,
+        "2020": 10.4,
+        "2021": 34.0,
+        "2022": -12.1,
+        "2023": 11.9,
+        "2024": 0.9,
+        "2025": -2.0,
+        "2026": 14.4
+      },
+      "exit_reasons": {
+        "trail_stop": "493",
+        "cross_down": "57",
+        "end_of_test": "8"
+      }
+    }
+  }
+}

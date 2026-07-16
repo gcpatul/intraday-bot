@@ -1,0 +1,32 @@
+# SECRETS — never commit. Alpaca keys live here.
+.env
+.env.*
+*.key
+
+# Bot runtime state (rebuilt from the broker on start; must not be shared)
+state.json
+heartbeat.json
+ALERTS.json
+KILL_SWITCH
+*.log
+
+# Large / regeneratable data — the LIVE bot fetches daily bars from Alpaca and
+# does not need these. Keep the small summary_*.json so the dashboard's
+# research scoreboard still renders when deployed.
+data/
+results/*.csv
+results/*.png
+!results/summary_*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

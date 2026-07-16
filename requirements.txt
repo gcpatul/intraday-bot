@@ -1,0 +1,7 @@
+yfinance>=0.2.50
+pandas>=2.0
+numpy>=1.26
+pyarrow>=14.0
+matplotlib>=3.8
+alpaca-py>=0.21
+flask>=3.0

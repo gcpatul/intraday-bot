@@ -1,0 +1,57 @@
+{
+  "config": {
+    "data_source": "alpaca",
+    "cost_bps_per_side": 10.0,
+    "start_equity": 12500.0,
+    "max_positions": 8,
+    "pos_frac": 0.125,
+    "trail_pct": 0.03,
+    "mr_hard_stop": 0.02,
+    "mr_time_stop_bars": 26,
+    "window": "2024-07-11..2026-04-14",
+    "sessions": 441
+  },
+  "benchmark_spy": {
+    "window_return_pct": 26.17,
+    "cagr_pct": 14.21,
+    "sharpe_daily_ann": 0.9,
+    "max_drawdown_pct": -20.84,
+    "trades": 0,
+    "win_rate_pct": 0.0,
+    "profit_factor": null,
+    "avg_trade_pct": 0.0,
+    "avg_bars_held": 0.0,
+    "same_day_round_trips": 0,
+    "worst_5day_daytrade_count": 0,
+    "final_equity": 15771.76
+  },
+  "runs": {
+    "momentum": {
+      "window_return_pct": 0.42,
+      "cagr_pct": 0.24,
+      "sharpe_daily_ann": 0.09,
+      "max_drawdown_pct": -16.61,
+      "trades": 1770,
+      "win_rate_pct": 35.0,
+      "profit_factor": 1.0,
+      "avg_trade_pct": 0.013,
+      "avg_bars_held": 239.8,
+      "same_day_round_trips": 220,
+      "worst_5day_daytrade_count": 12,
+      "final_equity": 12552.58,
+      "split": {
+        "h1_return_pct": -0.26,
+        "h2_return_pct": 0.68,
+        "h1_profit_factor": 0.98,
+        "h2_profit_factor": 1.02,
+        "h1_trades": 781,
+        "h2_trades": 989
+      },
+      "exit_reasons": {
+        "cross_down": "1065",
+        "trail_stop": "697",
+        "end_of_test": "8"
+      }
+    }
+  }
+}
