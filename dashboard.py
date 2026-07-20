@@ -480,7 +480,7 @@ def index():
 
 
 if __name__ == "__main__":
-    # PORT/HOST from env for cloud hosts (Railway sets PORT); localhost default.
+    # PORT/HOST from env for cloud hosts (Railway sets PORT); default to all interfaces.
     port = int(os.environ.get("PORT", "8050"))
-    host = os.environ.get("DASHBOARD_HOST", "127.0.0.1")
+    host = os.environ.get("DASHBOARD_HOST", "0.0.0.0")
     app.run(host=host, port=port, debug=False)
