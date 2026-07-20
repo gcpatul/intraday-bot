@@ -1,0 +1,38 @@
+name: Daily momentum bot cycle
+
+on:
+  schedule:
+    # 14:05 UTC = 10:05 AM ET (accounts for both EST/EDT close enough —
+    # bot.py's own window check, 10:00-15:00 ET, is the real safety net).
+    # Mon-Fri only. This is the trading cycle.
+    - cron: "5 14 * * 1-5"
+    # Every 15 min, 13:30-21:00 UTC, Mon-Fri: reconciliation self-heal.
+    # run_cycle() calls reconcile() FIRST on every invocation (protection
+    # audit, orphan cleanup) then no-ops the trading logic once today's
+    # cycle already ran — so this reuses the same, already-tested code path.
+    - cron: "*/15 13-20 * * 1-5"
+  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run one bot cycle
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          BOT_PAPER: "true"
+          BOT_DRY_RUN: "false"
+          BOT_MAX_EXPOSURE_USD: "10000"
+          BOT_ALERT_WEBHOOK: ${{ secrets.BOT_ALERT_WEBHOOK }}
+        run: python bot.py --once
