@@ -1,0 +1,30 @@
+name: Daily momentum bot cycle
+
+on:
+  schedule:
+    - cron: "5 14 * * 1-5"
+    - cron: "*/15 13-20 * * 1-5"
+  workflow_dispatch: {}
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run one bot cycle
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          BOT_PAPER: "true"
+          BOT_DRY_RUN: "false"
+          BOT_MAX_EXPOSURE_USD: "10000"
+        run: python bot.py --once
